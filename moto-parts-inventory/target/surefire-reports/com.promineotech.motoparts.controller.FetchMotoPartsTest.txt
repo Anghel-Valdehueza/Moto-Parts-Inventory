@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.promineotech.motoparts.controller.FetchMotoPartsTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.031 s <<< FAILURE! - in com.promineotech.motoparts.controller.FetchMotoPartsTest
+testThatMotosAreReturnedWhenAValidItemTypeNameAndItemNameAreSupplied  Time elapsed: 0.018 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [flyway/migrations/V1.0__Moto_Schema.sql]: DROP TABLE IF EXISTS user_accounts; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "USER_ACCOUNTS" because "CONSTRAINT_2D" depends on it; SQL statement:
+DROP TABLE IF EXISTS user_accounts [90107-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Cannot drop "USER_ACCOUNTS" because "CONSTRAINT_2D" depends on it; SQL statement:
+DROP TABLE IF EXISTS user_accounts [90107-214]
+
